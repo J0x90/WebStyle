@@ -1,0 +1,10 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+	<h3>User Agent String:</h3>
+	{% for c in content %}
+		{% for i in c %}
+			<p>{{i}}</p>
+		{% endfor %}
+	{% endfor %}
+{% endblock %}	
